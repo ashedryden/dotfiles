@@ -24,7 +24,7 @@ set wildmode=longest,list,full
 set wildmenu
 syntax on
 set background=dark
-colorscheme solarized " vividchalk
+colorscheme solarized
 
 filetype indent on
 filetype plugin on
