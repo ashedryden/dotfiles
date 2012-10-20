@@ -11,14 +11,19 @@ set guifont=Monaco:h16
 set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
 set shell=bash
 
+" show line and col numbers
+set number
+set ruler
+
 set paste
 
 set ts=2 sts=2 sw=2 expandtab
+set list
+set listchars=tab:¬-,trail:·
+highlight NonText guifg=#073642
+highlight SpecialKey guifg=#073642
 
-augroup vimrc
-  autocmd!
-  autocmd GuiEnter * set columns=120 lines=70 number
-augroup END
+set colorcolumn=81
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
