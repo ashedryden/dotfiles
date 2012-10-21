@@ -40,6 +40,14 @@ set ignorecase
 " show matching bracket
 set showmatch
 
+" navigate tabs with cmd + opt + left/right
+map <D-M-Right> gt
+map <D-M-Left> gT
+
+" turn completion on
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
