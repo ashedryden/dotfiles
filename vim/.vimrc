@@ -4,26 +4,39 @@ if exists('g:loaded_pathogen')
 endif
 
 syntax on
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 
 set visualbell
 set guifont=Monaco:h16
 set guioptions-=T guioptions-=e guioptions-=L guioptions-=r
 set shell=bash
 
-" show line and col numbers
+" color scheme
+set background=dark
+colorscheme solarized
+
+" show line and col numbers, status bar, smart paste
 set number
 set ruler
-
+set ls=2
 set paste
 
+" space/tab/indents/whitespace
 set ts=2 sts=2 sw=2 expandtab
+set autoindent
 set list
 set listchars=tab:¬-,trail:·
-highlight NonText guifg=#073642
-highlight SpecialKey guifg=#073642
-
 set colorcolumn=81
+highlight ColorColumn guibg=#073642
+
+" highlight searched items, ignore case on search
+set hlsearch
+set ignorecase
+
+" show matching bracket
+set showmatch
+
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
