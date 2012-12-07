@@ -6,6 +6,9 @@ autocmd vimenter * NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" Open NERDTree with Ctrl-s
+map <silent> <C-s> :NERDTree<CR><C-w>l:NERDTreeFind<CR>
+
 syntax on
 filetype plugin on
 filetype indent on
