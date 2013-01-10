@@ -47,6 +47,12 @@ set showmatch
 map <D-M-Right> gt
 map <D-M-Left> gT
 
+" map :W to :w
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
 " turn completion on
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
