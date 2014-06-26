@@ -37,10 +37,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-# define the pair function
-source "$HOME/.pair"
-# quietly set the previous pairing state
-pair -q
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
