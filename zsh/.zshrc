@@ -36,8 +36,8 @@ alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # projects
-alias !alterconf = 'cd Sites/alterconf.com/'
-alias !alterconftheme = 'cd Sites/alterconf.com/sites/all/themes/flat && mvim'
+alias alterconf='cd ~/Sites/alterconf.com/'
+alias alterconftheme='cd ~/Sites/alterconf.com/sites/all/themes/flat && mvim'
 
-alias !ashedryden = 'cd Sites/ashedryden.com/'
-alias !ashedrydentheme = 'cd Sites/ashedryden.com/sites/all/themes/tb_blog && mvim'
+alias ashedryden='cd ~/Sites/ashedryden.com/'
+alias ashedrydentheme='cd ~/Sites/ashedryden.com/sites/all/themes/tb_blog && mvim'
