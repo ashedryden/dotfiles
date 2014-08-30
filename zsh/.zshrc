@@ -29,13 +29,15 @@ plugins=(compleat git osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/ashedryden/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:/Users/ashedryden/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.rvm/bin
 
 # postgres
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# projects
+alias !alterconf = 'cd Sites/alterconf.com/'
+alias !alterconftheme = 'cd Sites/alterconf.com/sites/all/themes/flat && mvim'
+
+alias !ashedryden = 'cd Sites/ashedryden.com/'
+alias !ashedrydentheme = 'cd Sites/ashedryden.com/sites/all/themes/tb_blog && mvim'
