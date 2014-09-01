@@ -41,6 +41,3 @@ alias alterconftheme='cd ~/Sites/alterconf.com/sites/all/themes/flat && mvim'
 
 alias ashedryden='cd ~/Sites/ashedryden.com/'
 alias ashedrydentheme='cd ~/Sites/ashedryden.com/sites/all/themes/tb_blog && mvim'
-
-# iphone simulator
-alias iphone='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app/'
